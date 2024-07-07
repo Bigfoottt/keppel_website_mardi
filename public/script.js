@@ -1,4 +1,3 @@
-// Client-side validation for login form
 document.getElementById('loginForm')?.addEventListener('submit', function(e) {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
