@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tournament Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="registration-container">
+        <form id="registrationForm" action="/register" method="POST">
+            <h2>Tournament Registration</h2>
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+            <label for="captainName">Captain Name:</label>
+            <input type="text" id="captainName" name="captainName" required>
+            <label for="captainPhone">Captain Phone:</label>
+            <input type="text" id="captainPhone" name="captainPhone" required>
+            <label for="memberName">Member Name:</label>
+            <input type="text" id="memberName" name="memberName" required>
+            <label for="memberPhone">Member Phone:</label>
+            <input type="text" id="memberPhone" name="memberPhone" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Man">Man</option>
+                <option value="Woman">Woman</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="rulesPopup" class="popup">
+        <h3>Tournament Rules and Regulations</h3>
+        <p>...</p>
+        <button id="closePopup">Close</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
